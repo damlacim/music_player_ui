@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +20,25 @@ class MusicPage extends StatefulWidget {
 }
 
 class _MusicPageState extends State<MusicPage> {
+  bool playing = false;
+  IconData playBtn = Icons.play_arrow;
+
+  Duration position = new Duration();
+  Duration musicLength = new Duration();
+
+  Widget slider() {
+    return Slider.adaptive(
+        activeColor: Colors.black,
+        inactiveColor: Colors.white30,
+        value: position.inSeconds.toDouble(),
+        max: musicLength.inSeconds.toDouble(),
+        onChanged: (value) {});
+  }
+
+  void seekToSec(int sec) {
+    Duration newPos = Duration(seconds: sec);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -39,7 +59,7 @@ class _MusicPageState extends State<MusicPage> {
         child: Container(
           child: Column(
             children: [
-              SizedBox(height: 40.0),
+              SizedBox(height: 15.0),
               Row(
                 children: [
                   Icon(
@@ -56,9 +76,18 @@ class _MusicPageState extends State<MusicPage> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    width: 110.0,
+                  ),
+                  IconButton(
+                    color: Colors.white,
+                    iconSize: 20.0,
+                    onPressed: () {},
+                    icon: Icon(Icons.favorite_border),
+                  ),
                 ],
               ),
-              SizedBox(height: 45.0),
+              SizedBox(height: 35.0),
               Image.asset(
                 'images/safiyesoyman.png',
               ),
@@ -80,6 +109,71 @@ class _MusicPageState extends State<MusicPage> {
                   fontWeight: FontWeight.w300,
                   fontSize: 15,
                 ),
+              ),
+              SizedBox(height: 20.0),
+              slider(),
+              SizedBox(
+                height: 1.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    color: Colors.white,
+                    iconSize: 30.0,
+                    onPressed: () {},
+                    icon: Icon(Icons.skip_previous),
+                  ),
+                  IconButton(
+                    color: Colors.white,
+                    iconSize: 45.0,
+                    onPressed: () {
+                      if (!playing) {
+                        setState(() {
+                          playBtn = Icons.pause;
+                          playing = true;
+                        });
+                      } else {
+                        setState(() {
+                          playBtn = Icons.play_arrow;
+                          playing = false;
+                        });
+                      }
+                    },
+                    icon: Icon(playBtn),
+                  ),
+                  IconButton(
+                    color: Colors.white,
+                    iconSize: 30.0,
+                    onPressed: () {},
+                    icon: Icon(Icons.skip_next),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 14.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    color: Colors.white38,
+                    iconSize: 25.0,
+                    onPressed: () {},
+                    icon: Icon(Icons.repeat),
+                  ),
+                  SizedBox(
+                    width: 160.0,
+                  ),
+                  IconButton(
+                    color: Colors.white38,
+                    iconSize: 25.0,
+                    onPressed: () {},
+                    icon: Icon(Icons.shuffle),
+                  ),
+                ],
               )
             ],
           ),
