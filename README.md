@@ -1,16 +1,21 @@
-# music_player_ui
+# Music Player UI
 
-A new Flutter project.
+Hey folks! I tried a new challenge. I have designed a music player screen but the music is not playing. Because sometimes not everyone can do their part.
+Please don't blame them... 
+Anyway, I think the build was a bit confusing. Frankly, I went a little crazy while writing the code. But it wasn't too bad. I am still learning...
+I used our distinguished artist Safiye Soyman as an example. And of course her immortal work, Şımart Beni Aşkım.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+The design looks like this ->
 
-A few resources to get you started if this is your first Flutter project:
+![](https://github.com/damlacim/music_player_ui/blob/master/Screenshot_1632152001_389x800.jpg?raw=true)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+I wish the music played but the package exploded. That's why it doesn't play. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+So what did our big sis Safiye say? 
+
+
+>🎶🎶Birаzcık huysuz olаbilirim.
+Pire için yorgаn yаkаbilirim.
+Çаbаlаrsаn mutlu olаbilirim.
+Bir şeyler yаpıp dа şımаrt beni. 🎶🎶
