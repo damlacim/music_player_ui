@@ -16,6 +16,9 @@ So what did our big sis Safiye say?
 
 
 >🎶🎶Birаzcık huysuz olаbilirim.
-Pire için yorgаn yаkаbilirim.
-Çаbаlаrsаn mutlu olаbilirim.
-Bir şeyler yаpıp dа şımаrt beni. 🎶🎶
+>
+>Pire için yorgаn yаkаbilirim.
+>
+>Çаbаlаrsаn mutlu olаbilirim.
+>
+>Bir şeyler yаpıp dа şımаrt beni. 🎶🎶
